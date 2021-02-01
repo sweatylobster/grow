@@ -1,13 +1,12 @@
 # grow
-Reusable functions for assisting the imagination!
 For an arithmetically-guided grow operation.
 
 # Why Github lol
-Might help someone? Other than me. Also I have two computers.
+I have two computers.
 
 # Guiding questions
-What quantity of soil is required, and in what mix ratio, to get one cannabis plant the nutrients it requires (and not much more)?
-  -Weight-per-plant(kg), density(g/cm^3), pH, H20-retention (kg/t), nutrients (g), etc. of this soil?
+What quantity of soil, in what mix ratio, is required to get one cannabis plant juuuuust the nutrients it requires? No more, no less.
+  -Typical weight(kg), density(g/cm^3), pH, H20-retention (kg/t), nutrients (g), etc. of this soil
 How much do you want to grow, and, based on that, what does the facility look like? You going vertical? --> Square foot requirements.
 How the fuck am I gonna grow all this shit?
 How the fuck am I gonna sell all this shit?
@@ -17,18 +16,19 @@ How the fuck am I gonna sell all this shit?
 
 # Automation
 Determining yield *a priori* renders a ***MASSIVE*** facility. Nothing that can't be handled, it's just serious man-power is required.
-But ugh... Employees show up. Or don't. Or eat. Or don't. Or have bad days. Or complain about you not paying them. Etc. 
-Human labor is overrated anyway. Plus, work comp will kill me. No employees!
+Well, it kinda can't be handled -- how are people gonna water plants that are 14 feet off the ground, 24 times...? In what amount of time? Jesus.
+Furthermore: employees have to "show up." But they don't. They need to eat. But they don't. Worst of all, they complain about you not paying them. 
+There is no reason I should hire a human being. Human labor is overrated anyway. No employees!
 
 What actions are the most suitable for automation?
   -Watering, lights, ventilation. Isn't that all of the actions? What can't be automated?
-  -Optical evaluation, comparison (ML-type stuff)
-  -Measurement of parameters (humidity, temperature, soil weight, 
+  -Optical evaluation, comparison to other members of the same strain (ML-type stuff) ( program input )
+  -Measurement of parameters (humidity, temperature, weight, PPFD, CO_2)
   
 # ...Human labor, after all
 Well, 
--transferring plants from their seedling pots to their vegetative pots, (if we actually do this)
--examining plants (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y)
+-transferring plants from their seedling pots to their vegetative pots, (but certain grow setups don't require this anyway)
+-phenotype examination (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y)
 -measurement, I guess? (--of what quantities?)
 Never mind -- I don't think there's much of a need to employ anyone. 
 
