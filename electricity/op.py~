@@ -36,7 +36,7 @@ Electricity price for a number of LEDs.
 If called with adjust=True,
 avg. energy consumption is lowered for the cycle.
 '''
-    # each LED is .425 kW
+    # each LED is 425 W:
     kW = .425
     # if we adjust, we factor in reduced light, where 14.5 is average of
     #  hrs * wks + hrs * wks; averages to 14.5; common unit is weeks, so / 8
@@ -58,6 +58,10 @@ def operation_light_costs(quant, full_blast=False):
         return light_price(num_LEDs=quant, adjust=True)
 
 def ventilation_costs(n, W=100, adjust=True):
+    # make one electricity cost calculator,
+    # and make a dictionary of 
+    # watts = {'fan' : 100, 'led' : 425}
+    'Principle of electricity calculation is the same.'
     kW = W * .001
     if adjust:
         kWh_day = kW * 14.5
@@ -75,5 +79,5 @@ def ventilation_costs(n, W=100, adjust=True):
 #print(light_price(num_LEDs=72, adjust=False))
 #print(light_price(adjust=False))
 print(operation_light_costs(72))
-#print(operation_yield())
+print(operation_yield())
 print(ventilation_costs(72))
