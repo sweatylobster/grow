@@ -20,7 +20,9 @@ SOIL:
 3. OXYGEN
 4. WATER
 
-Bruce's work shows that PPFD drives the growth cycle. Yield is directly related to DLI. Furthermore, the relationship between efficiency and DLI is linear. We're left wondering, however, what the relation between PPFD and nutrient exhaustion is. That is: what quantities in soil are directly proportional to yield? The ratio of PPFD : H20 | C02 exhaustion is also entirely unknown. The most significant emendation of Bruce's work which lies to us to perform is:
+It is well known that PPFD drives the growth cycle. However: what is the relation between PPFD and nutrient exhaustion is. We can only infer the rule from data
+
+That is: what quantities in soil are directly proportional to yield? The ratio of PPFD : H20 | C02 exhaustion is also entirely unknown. The most significant emendation of Bruce's work which lies to us to perform is:
 
 1. Quantifying soil constituents in SI units.
    1. noting that percentages eventually give grams,
