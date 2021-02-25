@@ -42,7 +42,7 @@ If a human must assemble the nutrient mix for each plant, there would be a 'nutr
 
 # Ambient measurements
 
-These are determined for *locales*; (temp, humidity, CO2). For a volume of air: VPD is the relation between its current moisture, and its maximum capacity for moisture: Their difference is VPD. See the papers folder for a webpage resource by OSU defining this.
+These are determined for *locales*; (temp, humidity, CO2). VPD for a volume of air: the relation between its current moisture, and its maximum capacity for moisture: their difference is VPD. [Look it up.](https://en.wikipedia.org/wiki/Vapour-pressure_deficit).
 
 # ...Human labor, after all
 Well, transferring plants from their seedling pots to their vegetative pots, (but certain grow setups don't require this anyway). Phenotype examination (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y). 
