@@ -28,7 +28,21 @@ Determining yield *a priori* renders a ***MASSIVE*** facility. Just run "op.py",
 
 # Automation
 
-I/O = Input is measurement, output is control. There are two classes of measurement: discrete and ambient. An example of a discrete measurement is PPM of electrolytes in soil runoff, or the optical measurement of a plant. Nutrients go into *their* soil, after all. And ambient measurements: temp, humidity, CO2, are determined for *locales*. Appropriate automation of deeds requires the measurement which our program will take as input. The program embodies the character of judgment, which executes a the deed specified by the "then" in a conditional statement flow (if condition, to do pragma). In other words, the input is read into the form anticipated by a conditional statement, whereupon the output is converted into a pragmatic action of a machine *in that quantity specified* by the conditional statement. Since optical evaluation of the plants is one of the inputs, even discrete nutrient programs (per plant) can be determined by conditional statements. It might be inefficient to build a machine which will assemble the discrete elements which are specified by the conditional statement's output. In all cases: there is a model that the inputs map to. The outputs compensate for the input read via actions performed or directed. Whether via a human hand, or a machinic apparatus: upon arithmetic measurement of parameters, to compensate for the arithmetical difference between input values and pre-determined "ideal" values as prescribed by the model. The "ideal" in this case: can a per-plant model, given certain inputs, assemble in a statistical model the parameters which predict plant growth? Yes: this is the meaning of a statistical inference model after all. Machine "learning." What is the mathematical underpinning of such a technique?
+I/O = Input is measurement, output is action. {The input is read into the form anticipated by a conditional statement, whereupon the output is converted into a pragmatic action of a machine *in that quantity specified* by the conditional statement. Since optical evaluation of the plants is slated to be one of the inputs, even discrete nutrient programs (per plant) can be determined by conditional statements. 'Assessment' and 'correction' is the pragmatic translation of the terms 'input' and 'output'. Measurements fall under one of two categories: discrete or ambient. 
+
+# Discrete measurements
+
+Two examples of discrete measurements are PPM [of electrolytes] in its soil runoff, and the optical appraisal of a plant by a ML/statistical inference model. A given measurement might result in the following course of conditional statements, in Python. 
+ - def doctor_mode(plant):
+     - if plant.hue==deficiency[3]:
+         - assessment = how_bad_is_it(pixel_to_area_ratio, ['Ca', 'K'])
+	 - assessment as a
+	 - return "given a: plant lacks *x* units of Ca, and *y* units of K."
+If a human must assemble the nutrient mix for each plant, there would be a 'nutrient report' for a block of plants whose respective cameras diagnose their deficiencies. If a machine does assemble it, perhaps through regulation of dispensers, or soil mix ratios which meet the requirements, the variables need to be stored and passed on to the appropriate function that interfaces with the machine controls, or voltages. Bits and voltages... 
+
+# Ambient measurements
+
+These are determined for *locales*; (temp, humidity, CO2). For a volume of air: VPD is the relation between its current moisture, and its maximum capacity for moisture: Their difference is VPD. See the papers folder for a webpage resource by OSU defining this.
 
 # ...Human labor, after all
 Well, transferring plants from their seedling pots to their vegetative pots, (but certain grow setups don't require this anyway). Phenotype examination (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y). 
