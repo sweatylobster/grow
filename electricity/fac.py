@@ -24,4 +24,6 @@ def elec_price(n, W, hrs):
     return f'Cost per year: {ppy}'
 
 lights = (72, 480, 15)
+T4 = {'cfm': 205, 'W' : 28}
+
 print(elec_price(*lights))
