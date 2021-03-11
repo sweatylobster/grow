@@ -37,3 +37,12 @@ print(f"rental of 40x8.5x8 shipping container: ${container_year}/year")
 print("environment (Temp, RH, VPD) costs unknown.")
 print(f"for {cypress[0]}, {cypress[1]}W lights running {cypress[2]}h/day, ${elec_price(*cypress)}")
 print(f"total yearly cost = ${total}")
+
+
+def gain(ppp=2000, ppc=20, cpy=56//12):
+    # income per year
+    ipy = ppp * ppc * cpy
+    return f"at {cpy} (complete) cycles/year, producing {ppc}lbs each, at ${ppp} a pound: ${ipy}"
+
+print("on the other hand:")
+print(gain())
