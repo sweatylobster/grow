@@ -1,3 +1,4 @@
+from functools import reduce
 # number of lights:    n  (integer)
 # dimensions of light: s  (square feet)
 # size of aisle:       a  (feet)
@@ -17,13 +18,22 @@
 def elec_price(n, W, hrs):
     kW = n * W * 0.001
     # 20 cents a kW/h in CA
-    rate = .20
+    p = .20
     day = kW * hrs
     year = day * 365.25
     ppy = year * p
-    return f'Cost per year: {ppy}'
+    return ppy
+    #return f'kWh costs of {n}, {W}W lights a year: ${ppy}'
 
 lights = (72, 480, 15)
+cypress = (20, 725, 15)
 T4 = {'cfm': 205, 'W' : 28}
 
-print(elec_price(*lights))
+# price per month
+container_year = 165 * 12
+total = reduce(lambda x, y: x+y, [elec_price(*cypress), container_year])
+
+print(f"rental of 40x8.5x8 shipping container: ${container_year}/year")
+print("environment (Temp, RH, VPD) costs unknown.")
+print(f"for {cypress[0]}, {cypress[1]}W lights running {cypress[2]}h/day, ${elec_price(*cypress)}")
+print(f"total yearly cost = ${total}")
