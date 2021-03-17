@@ -12,10 +12,6 @@
 # the space of the container has ambient conditions that are unique
 
 
-def lighting_efficiency(leaf, cone_base):
-    return leaf / cone_base
-
-
 class plant():
 
     # in L
