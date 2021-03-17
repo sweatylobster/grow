@@ -1,5 +1,5 @@
 # grow
-For an arithmetically-guided grow operation.
+To specify the controlling elements of any grow operation.
 
 # Elements a cannabis plant requires in its soil
 
@@ -16,15 +16,13 @@ The minor nutrients are:
 6. Manganese,
 7. Copper.
 
-Here goes the section where we say how we can tell WITH OUR EYEBALLS what nutrients our lady requires. Perhaps(!) even those amounts in which she needs them *forthwith!*
+# Table of nutrient deficiency symptoms
 
-# Quantities, rates?
+TBA. 
 
-How much of each of the specified elements is required, *on average*? We need quite the sample size to determine this, and data is wanting since people are either lazy or secretive. Hopefully, secretive has nothing to do with glands here.
+# Labor concerns
 
-# Labor?
-
-Determining yield *a priori* renders a ***MASSIVE*** facility. Just run "op.py", and be amazed. Nothing that can't be handled... it's just, serious man-power is required. If we do a 3-dimensional facility, how high up are we gonna go? Adjusting light height would have to be automated, water distribution too. The problem with employees anyway is that they have to "show up." But they don't. And they need to eat. But they don't. Worst of all, they complain about you not paying them. In short: there is no reason I should hire a human being. Human labor is overrated anyway. No employees!
+Determining yield *a priori* renders a ***MASSIVE*** facility. For a 3-dimensional grow, light height adjustments and water distribution will have to be automated... Worker's compensation!!! The problem with employees anyway is that they have to "show up." But they don't. And they need to eat. But they don't. Worst of all, they complain about you not paying them. In short: there is no reason I should hire a human being. Human labor is overrated anyway. No employees!
 
 # Automation
 
@@ -36,28 +34,30 @@ Two examples of discrete measurements are PPM [of electrolytes] in its soil runo
  - def doctor_mode(plant):
      - if plant.hue==deficiency[3]:
          - assessment = how_bad_is_it(pixel_to_area_ratio, ['Ca', 'K'])
-	 - assessment as a
-	 - return "given a: plant lacks *x* units of Ca, and *y* units of K."
-If a human must assemble the nutrient mix for each plant, there would be a 'nutrient report' for a block of plants whose respective cameras diagnose their deficiencies. If a machine does assemble it, perhaps through regulation of dispensers, or soil mix ratios which meet the requirements, the variables need to be stored and passed on to the appropriate function that interfaces with the machine controls, or voltages. Bits and voltages... 
+	 - return "given ML assessment, nutrient PPM, & soil comp: plant lacks *x* units of Ca, and *y* units of K."
+If a human must assemble the nutrient mix for each plant, there would be a 'nutrient report' for a block of plants whose respective cameras diagnose their deficiencies. If a machine does assemble it, perhaps through regulation of dispensers, or soil mix ratios which meet the requirements, the variables need to be stored and passed on to the appropriate function that interfaces with the machine controls, or voltages. 
 
 # Ambient measurements
 
 These are determined for *locales*; (temp, humidity, CO2). VPD for a volume of air: the relation between its current moisture, and its maximum capacity for moisture: their difference is VPD. [Look it up.](https://en.wikipedia.org/wiki/Vapour-pressure_deficit).
 
 # ...Human labor, after all
-Well, transferring plants from their seedling pots to their vegetative pots, (but certain grow setups don't require this anyway). Phenotype examination (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y). 
+Well, how the hell is a machine gonna transfer plants from their seedling pots to their vegetative pots, etc? Well, certain grow setups don't require this anyway. Also, discrete phenotype examination (if ML is undeployed/inadequate -- i.e., "a bitch" -- or the exhaustive-quantity-of-cameras is c-o-s-t-l-y) can be done really easily by a human. 
 
 # Costs
 
 The cyclical ones are electricity, maintenance, seeds + soil, real-estate. The one-time expenses are the electrical devices.
 
-1. How much does ventilation cost?/year
-2. How much does soil cost?/cycle
-3. How much do lights cost?/year
+1. kWh/year
+2. soil/cycle
+3. RE/year
 
-#Enabled questions
-Given PAR, photosynthetically active radiation, in units of PPFD (umol/m^2 * s), to convert it into DLI(mol/m^2 * day), and then: how to optimize DLI for electricty costs?
+Can these be offset by revenue?
 
-1. What is the ratio of yield value to light costs? (per cycle)
-2. What is the ratio of yield value to ventilation costs? (per cycle)
-3. What is the ratio of yield value to electricity costs?
+#Enabled questions/optimizations
+How to optimize DLI for electricty costs? Where C_a = canopy_area:
+
+1. efficiency = umol/m^2*s X 1/C_a
+2. or E = PPFD * 1/canopy area
+
+So a height must be selected for PPFD which gives not only optimal umol values, but greatest energy efficiency, lest kWh costs bite us in the ass. The larger the grow, the more noticeable this is. Once PPFD is converted into DLI, we can ask -- does the efficiency value stay the same? We should select a height so that the area of the cone base matches, as closely as possible, canopy area.
