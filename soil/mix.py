@@ -1,31 +1,11 @@
 import pandas as pd
-from pandas import DataFrame as df
 # tuple order is NPK, scaling it down from unity kg-soil -> g-element
-soils = {"ocean and forest" : (.30, .45, .05), "neem seed" : (.60, .10, .20)}
+# because the ocean and forest is .30%, .45%, .05%, the total g content per unit weight is .0030, etc.
+soils = {"ocean and forest" : (.0030, .0045, .0005), "neem seed" : (.60, .10, .20)}
 # units are kg/L
-densities = {"ocean and forest" : 2.72/13.2, "neem seed" : }
+densities = {"ocean and forest" : 2.72/13.2, "neem seed" : 0}
 
-class NPK():
-    "constructs a tuple specified in order: (N, P, K) for the three indices."
+index = ["O&F", "NEEM", "KELP"]
 
-    def __init__(self, nitrogen, phosphorous, potassium):
-        self.N = nitrogen
-        self.P = phosphorous
-        self.K = potassium
-
-    def __eq__(self):
-        return (self.nitrogen, self.phosphorous, self.potassium)
-
-units = ["kg"]
-
-def mix(units, *args):
-    "put the elements of the tuple, weigh them by unit of choice"
-    times = len(*args)
-    l = [x for x in this]
-    pass
-
-
-
-class mix():
-
-    def __init__(self, *args):
+a = pd.DataFrame([{'N' : .0030, 'P' : .0045, 'K' : .0005, "Ca" : .01}, {'N' : .0060, 'P' : .0010, 'K' : .0020, "Ca" : None}, {'N' : , 'P' : , 'K' : , "Ca" : }], index=index)
+print(a.head())
