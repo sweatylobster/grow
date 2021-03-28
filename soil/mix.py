@@ -4,10 +4,10 @@ import pandas as pd
 # units are kg/L
 index = ["O&F", "NEEM", "KELP", "NAPR"]
 
-a = pd.DataFrame([{'kg/mL' : 2.72/13.2, 'N' : .3, 'P' : .45, 'K' : .05, "Ca" : 1},
-                  {'kg/mL' : 2.27/3.2 , 'N' : 6.0, 'P' : 1.0, 'K' : 2.0},
-                  {'kg/mL' : 1.80/1.89, 'N' : 1.0, 'P' : 0.0, 'K' : 2.0, "Ca" : 1.0, "Mg" : .50, "S" : 2.0}, 
-                  {'kg/mL' : 4.5/28, 'N' : 6.0, 'P' : 3.0, 'K' : 3.5, "Ca" : 7.0, "Mg" : 0.7, "S" : 2.5, "Fe" : 0.2}], index=index)
+a = pd.DataFrame([{'L/kg' : 13.2/2.72, 'N' : .3, 'P' : .45, 'K' : .05, "Ca" : 1},
+                  {'L/kg' : 3.2/2.27, 'N' : 6.0, 'P' : 1.0, 'K' : 2.0},
+                  {'L/kg' : 1.89/1.80, 'N' : 1.0, 'P' : 0.0, 'K' : 2.0, "Ca" : 1.0, "Mg" : .50, "S" : 2.0}, 
+                  {'L/kg' : 28/4.5, 'N' : 6.0, 'P' : 3.0, 'K' : 3.5, "Ca" : 7.0, "Mg" : 0.7, "S" : 2.5, "Fe" : 0.2}], index=index)
 print(a.head())
 
 class mix():
@@ -18,9 +18,10 @@ class mix():
                  "nature's pride":   (0.006, 0.0030, 0.0035)
                  }
 
-    densities = {"ocean and forest": 2.72/13.2,
+    densities = {"ocean and forest": 13.2/2.72,
                  "neem seed":        0,
-                 "kelp meal":        1.8/1.89
+                 "kelp meal":        1.89/1.8
+                 "nature's pride":   28/4.5
                  }
     print(densities)
 

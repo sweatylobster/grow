@@ -22,8 +22,8 @@ def elec_price(n, W, hrs):
     return ppy
     #return f'kWh costs of {n}, {W}W lights a year: ${ppy}'
 
-def soil_price(price, volume, plants):
-    total = price * plants * volume
+def soil_price(price_per_volume, volume, plants):
+    total = price_per_volume * volume * plants 
     return total
 
 lights = (72, 480, 15)
