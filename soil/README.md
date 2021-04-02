@@ -13,7 +13,7 @@ SOIL:
 3. OXYGEN         - ?
 4. WATER          - ?
 
-PPFD drives plant growth. The relation between PPFD and nutrient exhaustion is not yet clear. It's necessary to come up with a method whereby we can measure nutrient quantities and PPFD simultaneously, so that we can infer the rule from data. What soil composition is optimized for yield? The ratio of PPFD : H20 | C02 exhaustion is also unknown. The most significant emendation of Bruce's work which lies to us to perform is:
+PPFD drives plant growth. The relation between PPFD and nutrient exhaustion is not yet clear. It's necessary to come up with a method correlates nutrient quantities and PPFD. We can do this statistically, if only quantity of nutrients is reported in soil-runoff (PPM inferred by electroconductivity). An unrelated, but also import question is: What soil composition is optimized for yield?  The most significant emendation of Bruce's work which lies to us to perform is:
 
 1. Quantifying soil constituents in SI units.
    1. noting that percentages eventually give grams,
