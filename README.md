@@ -2,7 +2,7 @@
 To automate the optimization of any grow operation.
 
 # automation
-The practical meaning of an automated system is its be practically indistinguishable from judgment.  Where input is a recorded observation (electrical action in strict proportion with sensation), output is a sensible result. Numbers Criteria and conditional statements create for man an analogy between sensation and The input is *always* a binary representation of a known SI quantity; this allows for rapid integration of practices whose empirical validity has been determined by a peer-reviewed journal. This enables outputs of conditional statements to be always rational to SI units. This is essential for quantifying the effect which a routine is to have on the system. All conditional statements have SI units at both ends. To recap: where input is a recorded observation (in SI units), output is a pragmatic, voltage-controlled routine of a machine *in that quantity specified* by the conditional statement. 
+The input is *always* a binary representation of a known SI quantity; this allows for easy implementation of validated findings. If these identities, base or derived, are indistinguishable from that of an SI unit, outputs of conditional statements are representations of SI units. All conditional statements have SI units for IO. Input is an observation recorded in a voltage, translated into a voltage-schema perfectly mimetic of SI units. Output is a voltage-regulated routine of a machine whose action will affect the value, in a known proportion, of any SI unit whatever, whose change is effected to bring about the quantity specified by the conditional statement. 
 
 # (eventual) features
 1. CV*ML -> inference of nutrient deficiency
