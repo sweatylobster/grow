@@ -9,19 +9,20 @@
 2. Ecological
 	1. Living soil ecosystem and repository
 	2. Nutrient vat
+	3. Evolution, selection of microbiota
 
 # PAR mapping
 
-The problem of PAR mapping is as follows: with the least number of lights, to ensure most uniform distribution of optimal PPFD. This is a conic geometrical problem. Efficiency(E) is defined as:
+With the least number of lights, to provide uniform distribution of optimal PPFD (~1500umol/m^2*s). Considered geometrically, the problem is the conical dissemination of the PAR spectrum. (What are the dimensions of E?) Efficiency(E) is defined as:
 
 1. E = (PPF * 1/canopy_area) 
 2. where E is approaching sum value of PPFD
 
-In plain English, make sure the canopy and only the canopy gets the juice. TGL Cypress style lights...
+In plain English, make sure the canopy and only the canopy gets the juice.
 
 # Efficiency: the seedling phase.
 
-The space taken up by a cannabis plant is determined by PPFD(red) and stress training. Because it is the leaves receiving PAR, seedlings with small leaves must have different lighting considerations. They do not make a canopy. This means that conical lights must be used only when the plants are undergoing stress training, since other applications are inefficient. Because seedlings can be enclosed, they might with low hazard be placed outside, while maintaining humidity, and avoiding insects. This effectively eliminates electricity costs for the seedling phase. Small-scale COB LEDs might be used in tandem with the sun. Even if it is preferable to avoid placing them outside, efficiency demands that we treat the seedlings uniquely, since they do not have the canopy surface area, enabled by stress training, to warrant the use of conical lights.
+On the hypothesis that red wavelengths of light (+700nm) cause expansion, the space taken up by a cannabis plant is determined by PPFD_red and stress training. Because it is the leaves receiving PAR, seedlings with small leaves must have different lighting considerations. They do not make a canopy. This means that conical lights must be used only when the plants are undergoing stress training, since other applications are inefficient. Because seedlings can be enclosed, they might with low hazard be placed outside, while maintaining humidity, and avoiding insects. This effectively eliminates electricity costs for the seedling phase. Small-scale COB LEDs might be used in tandem with the sun. Even if it is preferable to avoid placing them outside, efficiency demands that we treat the seedlings uniquely, since they do not have the canopy surface area, enabled by stress training, to warrant the use of conical lights.
 
 
 # NCR
