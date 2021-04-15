@@ -1,0 +1,2 @@
+RULES:
+-name outputs by date

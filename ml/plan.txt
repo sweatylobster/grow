@@ -1,0 +1,19 @@
+Use arduino to measure nine cardinal parameters.
+Gotta be clever with how to get some of them in there, like wind speed.
+Whatever can't be recorded as a current can be inferred by camera and CV.
+Like inferring wind speed by deflection of a leaf.
+
+PRACTICAL QUESTIONS
+Does rate of measurement matter?
+Are there significant computational limits of logging?
+If so, log less often.
+Arduino has control flow. How to utilize?
+When a value comes in that corresponds to a physical quantum,
+to record that value at the clock time which corresponds to its event-time in seconds.
+Record seconds "awake" periodically.
+
+Each day is a .csv file.
+If .csv files can be compounded, their combination will track instancees of 
+strains. The data can be interpreted by several unique models. How is data prepared?
+To create modes of cleaning data, preparing them for the models? I'll hit on what's
+general among through experiment first, then document it h re.
