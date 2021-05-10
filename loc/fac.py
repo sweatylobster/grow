@@ -1,3 +1,4 @@
+import pandas as pd
 from functools import reduce
 
 def gain(lights=20, price=2000, cpy=52//12, mode='quiet'):
@@ -26,18 +27,24 @@ def soil_price(price_per_volume, volume, plants):
     total = price_per_volume * volume * plants 
     return total
 
+# electrical
 lights = (72, 480, 15)
 cypress = (20, 725, 15)
+
+# soil pp(vol)
+index = ["O&F"]
+ingredients = pd.DataFrame({'weight': ['40 lbs'], 'price':[300], '$/lb' : 300/40}, index=index)
+print(ingredients)
 
 # price per month
 container_year = 165 * 12
 total_cost = reduce(lambda x, y: x+y, [elec_price(*cypress), container_year])
 total = gain() - total_cost
 
-print(f"rental of 40x8.5x8 shipping container: ${container_year}/year")
-print("environment (soil, temp, RH) costs unknown.")
-print(f"for {cypress[0]}, {cypress[1]}W lights running {cypress[2]}h/day, ${elec_price(*cypress)}")
-print(f"total yearly cost = ${total_cost}")
-print("on the other hand:")
-print(gain(mode='quiet'))
-print(f"for a total of {total}")
+#print(f"rental of 40x8.5x8 shipping container: ${container_year}/year")
+#print("environment (soil, temp, RH) costs unknown.")
+#print(f"for {cypress[0]}, {cypress[1]}W lights running {cypress[2]}h/day, ${elec_price(*cypress)}")
+#print(f"total yearly cost = ${total_cost}")
+#print("on the other hand:")
+#print(gain(mode='quiet'))
+#print(f"for a total of {total}")

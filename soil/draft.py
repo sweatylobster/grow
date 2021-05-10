@@ -1,24 +1,12 @@
 import numpy as np
 
-class ingredient():
-    
-    def __init__(self, density, nutrients, portion):
-        self.density   = density
-        self.nutrients = nutrients
-        self.portion   = portion
-        self.kg_per_L  = self.portion * self.density
-
-    def total_nutrients(self, volume):
-        kg = self.kg_per_L * volume
-        return kg * nutrients
-
 # I is ingredient, E is element,
 # algebraically:
 # density(I) * ratio(I/mix) * vol(mix) = kg(I)
 # kg * %(E) = kg(E)
 
-# 18 liters
-volume = 6 * 3
+# 6 plants, volume in L
+volume = 6 * 11.3562
 dens = np.array([2.72/13.2, 2.27/3.2, 1.8/1.89, 4.5/28])
 ratio = np.array([.93, .004, .046, .02])
 kg = dens * ratio * volume

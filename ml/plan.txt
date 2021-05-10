@@ -1,5 +1,11 @@
 Use arduino to measure nine cardinal parameters.
+Went on mouser, there's a lot of stuff that might work.
+Main thing is implementing the algebra of the selected part.
 Gotta be clever with how to get some of them in there, like wind speed.
+This can be measured by deflection of a given surface.
+Moment must additionally be evaluated for more challenging motions,
+that of spears and leaves and the like, their parts flected by the wind,
+and cohering powerfully.
 Whatever can't be recorded as a current can be inferred by camera and CV.
 Like inferring wind speed by deflection of a leaf.
 
@@ -17,3 +23,6 @@ If .csv files can be compounded, their combination will track instancees of
 strains. The data can be interpreted by several unique models. How is data prepared?
 To create modes of cleaning data, preparing them for the models? I'll hit on what's
 general among through experiment first, then document it h re.
+
+
+We can use a regression
