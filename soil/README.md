@@ -13,14 +13,13 @@ SOIL:
 3. OXYGEN         - ?
 4. WATER          - ?
 
-PPFD drives plant growth. The relation between PPFD and nutrient exhaustion is not yet clear. It's necessary to come up with a method correlates nutrient quantities and PPFD. We can do this statistically, if only quantity of nutrients is reported in soil-runoff (PPM inferred by electroconductivity). An unrelated, but also import question is: What soil composition is optimized for yield?  The most significant emendation of Bruce's work which lies to us to perform is:
+PPFD drives plant growth. The relation between PPFD and nutrient exhaustion is not yet quantified, but can be inferred by electroconductivity of runoff(measured in PPM). An unrelated, but also import question is: What soil composition is optimized for yield?  The most significant emendation of Bruce's work which lies to us to perform is:
 
-1. Quantifying soil constituents in SI units.
-   1. noting that percentages eventually give grams,
-   2. g(nutrient)/g(soil) is our preliminary unit.
-   3. What device enables direct measurement of particular soil constituents?
-   4. This will enable quantifying plant metabolism when we compare start values (of our unit of choice) to run-off values (in identical units).
-2. Showing the relation between PPFD|DLI, and run-off.
+1. Quantifying nutrient consumption rate as a relation between:
+   1. initial concentration of nutrients in soil
+   2. amount of water in a day
+   3. DLI
+Which is the relation between PPFD|DLI, and run-off measured in electroconductive PartsPerMillion. The run-off is composed electroconductive nutrients "washed" out of the root-zone. These are already used by the plant.
 
 
 # Measurement devices

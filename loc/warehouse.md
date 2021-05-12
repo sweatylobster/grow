@@ -1,6 +1,6 @@
 # Categorical classification of facility requirements
 
-1. Electrical
+1. Electrical/Mechanical
 	1. Ventilation
 	2. CO2
 	3. Lights
@@ -10,6 +10,16 @@
 	1. Living soil ecosystem and repository
 	2. Nutrient vat
 	3. Evolution, selection of microbiota
+
+	
+# How many square feet do we need?
+
+Since the coverage area of lights is reckoned to be square, and we have a train of these lights, the total area of lights is rectangular. The width of the system is based on the angle from the light to the extent of the plant-canopy. Each stage of plant growth has unique lighting requirements. A light is chosen for its practicality in illuminating the canopy
+
+
+
+There are smaller lights that for the same plant height will cover the entire plant, as thought the christmas tree were a fully shaded cone. Topping is really indispensable for indoor growers, because the tight spacing of the plants makes it so that the majority of the exposed canopy is at the top. Hydration makes the leaves larger. Therefore, topping provides no disadvantage for light acceptance, or a reduction in the efficiency of Watts out from the light to photons in to the plant. (flux not reduced by topping). 
+Topping spreads out the leaves, which diminish in size only if dehydrated. 
 
 # PAR mapping
 
